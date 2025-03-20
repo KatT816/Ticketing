@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Ticketing
 {
-    public class 2TicketPrice
+    public class TicketPrice
     {
         private int section;
         private int quantity;
@@ -17,11 +17,13 @@ namespace Ticketing
     //first round price change
     //second round price change
     //discount changed as well in development 2
+    //also decided to introduce new discount variable for future merging
 
         const decimal mdecBalcony = 55.5m;
         const decimal mdecGeneral = 48.75m;
         const decimal mdecBox = 82.0m;
-        const decimal mdecDiscount = 10.0m; 
+        const decimal mdecDiscount = 10.0m;
+        const decimal additionalDiscount = 10.0m;
 
         private int Section
         {
@@ -73,6 +75,9 @@ namespace Ticketing
          }
          if (discount)
          { mPrice -= mdecDiscount; }
+
+        //apply the additional discount
+        mPrice = mPrice * additionalDiscount;
 
          AmountDue = mPrice * quantity;
 
