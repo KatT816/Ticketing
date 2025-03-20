@@ -15,10 +15,11 @@ namespace Ticketing
         private decimal mPrice;
 
     //first round price change
+    //second round price change
 
-        const decimal mdecBalcony = 45.5m;
-        const decimal mdecGeneral = 38.75m;
-        const decimal mdecBox = 72.0m;
+        const decimal mdecBalcony = 55.5m;
+        const decimal mdecGeneral = 48.75m;
+        const decimal mdecBox = 82.0m;
         const decimal mdecDiscount = 5.0m; 
 
         private int Section
