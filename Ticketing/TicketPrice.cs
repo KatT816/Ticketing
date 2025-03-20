@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Ticketing
 {
-    public class TicketPrice
+    public class 2TicketPrice
     {
         private int section;
         private int quantity;
@@ -14,9 +14,11 @@ namespace Ticketing
         private decimal amountDue;
         private decimal mPrice;
 
-        const decimal mdecBalcony = 35.5m;
-        const decimal mdecGeneral = 28.75m;
-        const decimal mdecBox = 62.0m;
+    //first round price change
+
+        const decimal mdecBalcony = 45.5m;
+        const decimal mdecGeneral = 38.75m;
+        const decimal mdecBox = 72.0m;
         const decimal mdecDiscount = 5.0m; 
 
         private int Section
